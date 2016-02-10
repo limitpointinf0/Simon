@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="simon.js"></script>
+
+<style>
+body{background-color:#000000; margin: 0 auto;}
+button{height: 25vh; border-width: 5px; border-style: outset;}
+#info{height: 25vh; font-size: 7vmin;}
+
+.activate{border-width: 5px; border-style:outset; border-color:#ffffff;}
+</style>
+</head>
+
+<body>
+<div class="container">
+<br>
+<div class="row">
+    <button type='btn' class="col-xs-6 btn btn-success" onclick="userInput(0)"><h1>.</h1></button>
+    <button type='btn' class="col-xs-6 btn btn-danger" onclick="userInput(1)"><h1>.</h1></button>
+</div>
+<div class="row">
+	<button type='btn' class="col-xs-6 btn btn-warning" onclick="userInput(2)"><h1>.</h1></button>
+    <button type='btn' class="col-xs-6 btn btn-primary" onclick="userInput(3)"><h1>.</h1></button>
+</div>
+<br><br><br>
+<div class="row">
+	<div id="info" class="col-xs-offset-2 col-xs-4 alert alert-info">
+		
+		<center><span id="lvlinfo">1</span></center>
+	</div>
+	
+	
+	<button type='btn' class="col-xs-4 btn btn-default" onclick="Main()"><h3>GO</h3></button>
+</div>
+</div>
+</body>
+
+</html>
